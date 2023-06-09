@@ -1,0 +1,492 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+.text-white{
+    color: white !important;
+}
+
+#main{
+     
+       
+       
+}
+
+#header{ 
+  
+   height: 50px;
+   background-color: black;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+
+#nav{
+   
+}
+
+#nav  ul{
+    
+    list-style-type: none;
+}
+   
+    
+
+#nav ul li {
+   position: relative;
+   display:inline-block;
+}
+
+#nav ul li a:hover{
+    background-color: grey;
+    color: black;
+
+}
+
+#nav ul li a {
+    float: left;
+    text-decoration: none;
+    padding: 16px 24px;
+    color: white;
+   
+}
+
+#nav ul li ul {
+    width:135px;
+    background-color: white;
+    position:absolute;
+   visibility: hidden;
+   left:405px; top:50px;
+}
+
+#nav ul li ul li a{
+        color: black;
+        width: 100%; 
+}
+
+#nav ul li:hover ul    {
+    
+    visibility: visible;
+}
+
+#search{
+    
+    float: right;
+    padding: 16px 24px;
+    width: 80px;
+}
+
+#search :hover{
+   background-color: red;
+   
+}
+
+.ti-search{
+    line-height: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+#slider{
+    margin-top: 50px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+.text{
+    color: white;
+    padding:100px 600px;
+    text-align: center;
+}
+
+.text1{
+   /* padding: 0px 100px;*/
+   font-size: large;
+   font-weight: 400;
+}
+
+.text2{
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#content{
+   
+  
+ 
+}
+
+.content-selec{
+    width: 800px;
+    max-width: 100%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 64px 0px;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.select-heading{
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.select-sub-heading{
+    padding: 20px 0px;
+    font-style: italic;
+    font-weight:200;
+    color: grey;
+}
+
+#about{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.member-team{
+
+}
+
+.team{
+    width: 33.3%;
+    margin-top: 30px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    float: left;
+}
+
+.name{
+    margin-bottom: 20px;
+}
+
+.team-img{
+    width: 180px;
+    border-radius: 5px;
+}
+
+.tour{
+    width: 100%;
+    height: 800px;
+    background-color: black;
+}
+
+.ticket-list{
+    list-style-type: none;
+    background-color: white;
+    margin-top: 40px;
+}
+
+.ticket-list li{
+  
+    border-bottom: 1px solid #ddd;
+   /* line-height: 40px;*/
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 10px;
+    color: #757575;
+}
+
+.sold-out{
+  background-color: red;
+  padding: 5px 5px;
+  margin-left: 10px;
+  color: white;
+}
+
+.quality{
+      background-color: black;
+      color: white;
+      width: 24px; height: 24px;;
+      border-radius: 50%;
+      float: right;
+     text-align: center;
+     line-height: 24px;
+     margin-top: -3px;
+}
+
+.place-list{
+   margin-top: 40px;
+   margin-left: -8px;
+   margin-right: -8px;
+   margin-bottom: 48px;
+}
+
+.place-items{
+    float: left;
+    width: 33.3%;
+    padding: 0 8px;
+}
+
+.place-img{
+   width: 100%;
+   display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.infor-place{
+   text-align: justify;
+   background-color: white;
+   padding: 16px;
+   font-size: 14px;
+  
+}
+
+.place-heading{
+ font-weight: 600;
+ 
+}
+
+.place-time{
+ color: #ddd;
+ margin-top: 15px;
+}
+
+.place-desc{
+    margin-top: 15px;
+   
+}
+
+.button-buy{
+    background-color: black;
+    margin-top: 15px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button-buy:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+#footer{
+
+}
+
+.modal{
+    position: fixed;
+    top:0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0,0, 0,4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100%-32px);
+    animation: modalFadeIn ease 0.6s;
+}
+
+.ti-close{
+    float: right;
+    padding: 15px;
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0,8;
+}
+
+.ti-close:hover{
+    background-color: #757575;
+    
+}
+
+.modal-heaing{
+    background-color:darkcyan;
+    height: 129px;
+    color: #fff;
+    text-align: center;
+    line-height: 129px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.ti-bag{
+    margin-right: 20px;
+}
+
+.modal-body{
+    padding: 35px 15px;
+    
+}
+
+.modal-label{
+    font-size: 18px;
+}
+
+.modal-input{
+   display: block;
+   width: 100%;
+    padding: 15px 15px;
+    margin: 15px 0px;
+    font-size: 16px;
+}
+
+#button-pay{
+    width: 100%;
+    margin: 15px 0px;
+    background-color: darkcyan;
+    color: white;
+    font-weight: 600;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+#button-pay:hover{
+    background-color: #757575;
+    color: black;
+}
+.modal-footer{
+    float: right;
+}
+
+.contact{
+    
+    margin-top: 20px;
+    width: 100%;
+    
+}
+
+.contact1{
+    width: 50%;
+    float: left;
+  text-align: left;
+   font-size: 18px;
+   margin-top: 20px;font-weight: 900;
+   
+}
+
+.contact2{
+    width: 50%;
+    display: inline-block;
+   padding: 10px 10px;
+}
+
+.ti-location-pin {
+    display: block;
+}
+.ti-mobile{
+    margin-top: 10px;
+    display:block;
+    
+}
+.ti-email{
+    margin-top: 10px;
+    display:block
+}
+
+.message{
+    width: 99%;
+    padding: 10px 0px;
+    text-align: left;
+    margin-top: 10px;
+}
+.send{
+    float: right;
+    background-color: black;
+    color: #fff;
+    padding: 15px 20px;
+    margin-top: 15px ;
+    cursor: pointer;
+}
+.send:hover{
+    color: black;
+    background-color: #757575;
+    
+}
+
+.text{
+    padding: 10px 0px;
+    text-align: left;
+    margin-top: 10px;
+    width: 49%;
+}
+
+.map{
+    width: 100%;
+    margin-top:-170px;
+}
+
+#footer{
+    
+
+    text-align: center;
+    background-color:#fff;
+    padding: 20px;
+    
+}
+
+.social{
+    font-size: 24px;
+}
+.social a{
+   color: rgba(0, 0,0, 0.6);
+   text-decoration: none;
+}
+
+.copy-right{
+   margin-top: 10px;
+   font-size: 15px;
+   color: rgba(0, 0,0, 0.6);
+}
+.copy-right a{
+    margin-left: 5px;
+    color: rgba(0, 0,0, 0.6);
+}
+.help{
+    text-decoration: underline;
+    color: darkcyan;
+}
+ @keyframes modalFadeIn{
+     from{
+         transform: translateY(-150px);
+         opacity: 0;
+     }
+     to{
+          transform: translateY(0);
+          opacity: 1;
+     }
+ }
+
+
+ @media (min-width: 1024px){
+
+ }
+
+ @media (min-width: 740px ) and (max-width: 1023px){
+
+}
+
+@media(max-width:740px)
+{
+
+}
